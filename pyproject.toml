@@ -1,0 +1,35 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "tapir"
+authors = [{name = "Jochen Wersdörfer", email = "jochen-tapir@wersdoerfer.de"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: MIT License"]
+dynamic = ["version", "description"]
+
+dependencies = []
+
+[project.optional-dependencies]
+test = [
+    "pytest >= 6",
+    "pytest-cov >= 3",
+    "pytest-mock",
+    "pytest-randomly",
+]
+doc = [
+    "furo",
+]
+dev = [
+    "black",
+    "flake8",
+    "isort",
+    "jupyterlab",
+    "rich",
+    "typer",
+]
+
+[project.urls]
+Home = "https://github.com/ephes/tapir"
+
