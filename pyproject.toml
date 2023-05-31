@@ -11,6 +11,7 @@ dynamic = ["version", "description"]
 
 dependencies = [
     "openai",
+    "pydantic[dotenv]",
 ]
 
 [project.optional-dependencies]
